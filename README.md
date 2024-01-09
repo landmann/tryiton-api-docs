@@ -30,3 +30,6 @@ Install our Github App to autopropagate changes from youre repo to your deployme
 
 - Mintlify dev isn't running - Run `mintlify install` it'll re-install dependencies.
 - Page loads as a 404 - Make sure you are running in a folder with `mint.json`
+- If you have issues with "sharp", something I tried (and it worked) was to follow these stackoverflow solutions in order:
+- 1. (https://stackoverflow.com/a/67566332)
+  2. (https://stackoverflow.com/a/75852216)
