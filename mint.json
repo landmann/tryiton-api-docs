@@ -4,7 +4,7 @@
     "dark": "/logo/logo.png",
     "light": "/logo/logo.png"
   },
-  "favicon": "/favicon.svg",
+  "favicon": "/favicon-32x32.png",
   "colors": {
     "primary": "#9747FF",
     "light": "#9747FF",
@@ -20,60 +20,30 @@
       "url": "mailto:hi@mintlify.com"
     }
   ],
-  "topbarCtaButton": {
-    "name": "Dashboard",
-    "url": "https://dashboard.mintlify.com"
-  },
-  "tabs": [
-    {
-      "name": "API Reference",
-      "url": "api-reference"
-    }
-  ],
-  "anchors": [
-    {
-      "name": "Documentation",
-      "icon": "book-open-cover",
-      "url": "https://mintlify.com/docs"
-    },
-    {
-      "name": "Community",
-      "icon": "slack",
-      "url": "https://mintlify.com/community"
-    },
-    {
-      "name": "Blog",
-      "icon": "newspaper",
-      "url": "https://mintlify.com/blog"
-    }
-  ],
   "navigation": [
     {
-      "group": "Get Started",
-      "pages": ["introduction", "quickstart", "development"]
-    },
-    {
-      "group": "Essentials",
-      "pages": ["essentials/markdown", "essentials/code", "essentials/images", "essentials/settings", "essentials/navigation"]
-    },
-    {
-      "group": "API Documentation",
-      "pages": ["api-reference/introduction"]
-    },
-    {
-      "group": "Endpoint Examples",
+      "group": "Image edits",
       "pages": [
-        "api-reference/endpoint/get",
-        "api-reference/endpoint/create",
-        "api-reference/endpoint/delete",
-        "get-say-hello"
+        "api-reference/image-edits/get-image-editor-images",
+        "api-reference/image-edits/post-recreate",
+        "api-reference/image-edits/post-enhance",
+        "api-reference/image-edits/post-expand",
+        "api-reference/image-edits/post-upscale"
+      ]
+    },
+    {
+      "group": "Model",
+      "pages": [
+        "api-reference/model/post-train-model",
+        "api-reference/model/post-delete-model"
       ]
     }
   ],
   "footerSocials": {
-    "twitter": "https://twitter.com/mintlify",
-    "github": "https://github.com/mintlify",
-    "linkedin": "https://www.linkedin.com/company/mintsearch"
+    "instagram": "https://www.instagram.com/tryitonai/",
+    "tiktok": "https://www.tiktok.com/@tryitonai",
+    "linkedin": "https://www.linkedin.com/company/tryitonai/",
+    "youtube": "https://www.youtube.com/@tryitonai"
   },
   "api": {
     "auth": {
@@ -81,5 +51,5 @@
       "name": "x-tryiton-key"
     }
   },
-  "openapi": "https://localhost:3000/api/openapi.json"
+  "openapi": "http://localhost:3000/api/openapi.json"
 }
