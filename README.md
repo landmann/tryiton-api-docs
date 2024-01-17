@@ -22,6 +22,12 @@ Run the following command at the root of your documentation (where mint.json is)
 mintlify dev
 ```
 
+Run the following command to auto fetch all the endpoints and them move them around in the `api-reference` folder
+
+```
+npx @mintlify/scraping@latest openapi-file <path-to-openapi-file>
+```
+
 ### Publishing Changes
 
 Install our Github App to autopropagate changes from youre repo to your deployment. Changes will be deployed to production automatically after pushing to the default branch. Find the link to install on your dashboard. 
