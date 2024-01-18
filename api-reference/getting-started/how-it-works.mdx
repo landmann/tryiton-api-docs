@@ -3,27 +3,16 @@ title: 'How it works'
 description: 'Get up and running in minutes!'
 ---
 
-Broadly speaking, this is the flow for getting the most out of these APIs:
+### Before we start...
 
-<Steps>
-  <Step title="Create API Key">
-    Head to the <a href="https://studio.tryitonai.com/developers">Developer Dashboard</a> and create an API key.
-  </Step>
-  <Step title="Get Credits">
-    Purchase <a href="https://studio.tryitonai.com/express">models</a> or 
-    <a href="https://studio.tryitonai.com/billing">credits</a>
-    if you don't have any.
-  </Step>
-  <Step title="Train a model">
-    Have your users gather 10-30 selfies and train a model.
-  </Step>
-  <Step title="Generate Images">
-    An Express model will automatically generate 100-200 images.
-  </Step>
-  <Step title="Edit the Images">
-    Use any of the AI edit tools to alter the images to perfection.
-  </Step>
-</Steps>
+Head to the <a href="https://studio.tryitonai.com/developers">Developer Dashboard</a> and create an API key.
+Make sure you have enough <a href="https://studio.tryitonai.com/express">models</a> or <a href="https://studio.tryitonai.com/billing">credits</a> 
+before we continue.
+
+### Training Models
+
+Once you've purchased models, fetch them using the [get models](/api/get-models) endpoint.
+Select the *model id* you'd like to use and pass it to the [train model](/api/train-model) endpoint.
 
 ## API Key
 
@@ -31,7 +20,7 @@ After you generate and safely store your API Key, you have to set the `x-tryiton
 
 <Info>Your API Key is an authentication key for your specific account, so the models and credits used through the public API are the same ones that you can use via your account.</Info>
 
-## No-Code Integrations
+### No-Code Integrations
 
-If you'd like to see any specific No-Code integrations such as Zapier, Wordpress, or others, drop us a line at 
-[nathan@tryitonai.com](nathan@tryitonai.com), and we'll get to it promptly!
+If you'd like to see any specific No-Code integrations such as Zapier, Wordpress, Wix, or others, drop us a line at 
+[nathan@tryitonai.com](nathan@tryitonai.com) and we'll get to it promptly!
