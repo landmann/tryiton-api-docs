@@ -3,22 +3,51 @@ title: 'How it works'
 description: 'Get up and running in minutes!'
 ---
 
-### Before we start...
+### Overview
+Here's a rough overview of how the API works:
 
-Head to the <a href="https://studio.tryitonai.com/developers">Developer Dashboard</a>, fill out an application, and wait less than 24 hours for a response.
-Once approved create an API key and make sure you have enough <a href="https://studio.tryitonai.com/express">models</a> or <a href="https://studio.tryitonai.com/billing">credits</a>
+1. Submit an application form here and wait to get approved.
+2. Generate an API key and safely store it for future use.
+3. Purchase models or credits in the [studio](https://studio.tryitonai.com).
+4. Train a model using the [train model](/api/train-model) endpoint.
+5. Fetch the images using the [get images](/api/get-model-generated-images) endpoint
+6. Edit the images using any of our AI editing tools.
+
+<Frame caption='We only save images uploaded for training, generated with models, or edited with AI tools. You can delete these anytime.'>
+ <img src="/images/api-graph.png" />
+</Frame>
+
+### Generate an API key
+
+Head to the <a href="https://studio.tryitonai.com/developers">Developer Dashboard</a>, fill out an application, and we'll respond within 24 hours.
+Once approved, create an API key, store it safely, and make sure you have enough <a href="https://studio.tryitonai.com/express">models</a> or <a href="https://studio.tryitonai.com/billing">credits</a>
 to use the API.
+
+To use the API key, set it as the `x-tryiton-key` request header in all the requests that you send to our public API.
+<br />
+<Tip>Your **API Key** is specific to your account. The models and credits used through the API are the same ones that you can use via your account.</Tip>
 
 ### Training Models
 
 Once you've purchased models, fetch them using the [get models](/api/get-models) endpoint.
-Select the *model id* you'd like to use and pass it to the [train model](/api/train-model) endpoint.
+Select the *model id* you'd like to train and pass it to the [train model](/api/train-model) endpoint.
 
-## API Key
+A model has to be trained before it can be used to generate images. Training a model is a one-time process and can take up to 24 hours to complete.
 
-After you generate and safely store your API Key, you have to set the `x-tryiton-key` request header to the value of the API Key in all the requests that you send to our public API.
+Once training begins, the `is_used` parameter will be set to `true`. Once training is complete, the `is_trained` parameter will be set to `true`.
+The `email_sent` flag can be safely ignored (it's used to indicate when a user has been notified that their model is ready).
 
-<Info>Your API Key is an authentication key for your specific account, so the models and credits used through the public API are the same ones that you can use via your account.</Info>
+Once a model is trained, it cannot be retrained.
+
+### Generating images
+
+Image generation happens automatically once a model is trained depending on the styles you chose. 
+Users can also customize their images using the `customizations` parameter.
+
+### Editing images
+
+You can upload any URL to our AI image editing tools. 
+The max size is **1024x1024**, so we will resize the image if it's larger than that.
 
 ### No-Code Integrations
 
