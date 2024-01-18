@@ -17,10 +17,22 @@
   "topbarLinks": [
     {
       "name": "Support",
-      "url": "mailto:team@tryitonai.com"
+      "url": "mailto:nathan@tryitonai.com"
+    },
+    {
+      "name": "Dashboard",
+      "url": "https://studio.tryitonai.com/developers"
     }
   ],
   "navigation": [
+    {
+      "group": "Overview",
+      "pages": [
+        "api-reference/getting-started/overview",
+        "api-reference/getting-started/how-it-works",
+        "api-reference/getting-started/technicalities"
+      ]
+    },
     {
       "group": "Image edits",
       "pages": [
