@@ -2,3 +2,11 @@
 openapi: post /train-model
 title: Train model
 ---
+
+### The 'styles' parameter
+For the styles parameter pass down **at least one** of the styles from the ones available the chosen **gender**.
+
+You can use the [previous endpoint](/api-reference/model/get-get-styles) to get all the available styles per gender.
+
+Send the desired styles separated by comma. For example:<br />
+`business office,business outdoors,sporty`
