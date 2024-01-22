@@ -30,6 +30,7 @@
       "pages": [
         "api-reference/getting-started/overview",
         "api-reference/getting-started/how-it-works",
+        "api-reference/getting-started/prompting-image-edits",
         "api-reference/getting-started/technicalities"
       ]
     },
