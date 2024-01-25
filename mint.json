@@ -80,5 +80,5 @@
       "name": "x-tryiton-key"
     }
   },
-  "openapi": "https://tryiton-webapp-git-dev-try-it-on.vercel.app/api/openapi.json"
+  "openapi": "https://studio.tryitonai.com/api/openapi.json"
 }
