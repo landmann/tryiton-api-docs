@@ -61,8 +61,8 @@
       "pages": [
         "api-reference/model/get-get-models",
         "api-reference/model/get-get-model-generated-images",
-        "api-reference/model/post-set-model-data",
         "api-reference/model/get-get-styles",
+        "api-reference/model/post-set-model-data",
         "api-reference/model/post-train-model",
         "api-reference/model/post-delete-model"
       ]
