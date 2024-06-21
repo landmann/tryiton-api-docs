@@ -11,26 +11,25 @@ For the styles parameter pass down **at least one** of the styles from the ones 
 
 You can use the [previous endpoint](/api-reference/model/get-get-styles) to get all the available styles per gender.
 
-Send the desired styles separated by comma. For example:<br />
-`business office,business outdoors,sporty`
+If you'd like to upload your own style, do note that you have to first get the key of the uploaded style using the [image upload endpoint](/api-reference/image/put-upload/image), 
+and then ensure you use it within 24 hours, as it will be deleted automatically thereafter.
 
 ### The 'customizations' parameter
 This parameter corresponds to the "Customizations" step when customizing a freshly bought model in the studio.
 
 It should contain defining features of the user, such as **eye color**, **hair color**, **haircut style**, **glasses** or **beard**.
-Glasses or beard should only be mentioned if the subject's photos contain those features. No need to specify **"no beard"** or **"no glasses"**.
+Glasses or beard should only be mentioned if the subject's photos contain those features. No need to specify **"no beard"** or **"no glasses"**, however. These features should be separated by comma and space (`, `). 
 
-
-These features should be separated by comma and space (`, `).
-
-Last but not least, don't overdo it, because it will limit the AI's creativity in generating photos. Here is a good example for a **male subject**:<br />
-`brown eyes, brown hair, beard`
+Lastly, don't overdo it because it will limit the AI's creativity in generating photos, or potentially confuse concepts. Here is a good example for a **male subject**:<br />
+`wearing glasses, thick beard, mohawk haircut`
 
 ### The 'imageUrls' parameter
-For best results, we recommend you upload **square** images of a resolution of **640x640** (you can pad them with a white background if the subject crops are not square).
+You must upload **square** images with a resolution of **640x640** (you can pad them with a white background if the subject crops are not square).
+
+If the images are not square, the AI will crop them to a square, potentially cutting off important parts of the subject.
 
 The images should be real photos containing the same subject and no other people in them. You can check the guidelines presented when customizing a freshly bought model for more details.
 
-Regarding the location of these images, as long as **CORS** is enabled on the domain hosting the images, everything should be alright.
+Regarding the location of these images, as long as **CORS** is enabled on the domain hosting the images, we'll be able to access them.
 
-But to be extra safe, you can also use our [image upload endpoint](/api-reference/image/put-upload/image) to store your images and use image urls that will certainly work.
+To be extra safe, you can also use our [image upload endpoint](/api-reference/image/put-upload/image) to store your images and use image urls that will certainly work.
