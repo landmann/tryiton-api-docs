@@ -43,7 +43,8 @@
     {
       "group": "Image Management",
       "pages": [
-        "api-reference/image/put-upload-image"
+        "api-reference/image/put-upload-image",
+        "api-reference/image/put-upload-style"
       ]
     },
     {
