@@ -3,3 +3,6 @@ openapi: post /recreate
 title: Recreate
 ---
 <Note>This operation costs **20 credits**.</Note>
+Recreate is a bit different than the rest in that we first return the URL of the images, 
+but that doesn't mean the images are processed yet. You may have to do a slow pull
+to get the images once they're done by hitting the URL endpoint every 5 seconds or so.

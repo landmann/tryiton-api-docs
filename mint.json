@@ -30,7 +30,7 @@
       "pages": [
         "api-reference/getting-started/overview",
         "api-reference/getting-started/how-it-works",
-        "api-reference/getting-started/prompting-image-edits",
+        "api-reference/getting-started/prompting-ai-edits",
         "api-reference/getting-started/technicalities"
       ]
     },
@@ -50,7 +50,6 @@
     {
       "group": "Image edits",
       "pages": [
-        "api-reference/image-edits/get-image-editor-images",
         "api-reference/image-edits/post-recreate",
         "api-reference/image-edits/post-enhance",
         "api-reference/image-edits/post-expand",
