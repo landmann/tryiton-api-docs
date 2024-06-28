@@ -80,5 +80,11 @@
       "name": "x-tryiton-key"
     }
   },
+  "metadata": {
+    "og:image": "https://public.tryitonai.com/thumbnail.webp"
+  },
+  "seo": {
+    "indexHiddenPages": true
+  },
   "openapi": "https://studio.tryitonai.com/api/openapi.json"
 }
